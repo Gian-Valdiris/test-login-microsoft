@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit {
         filter((msg: EventMessage) => msg.eventType === EventType.LOGIN_SUCCESS),
       )
       .subscribe((result: EventMessage) => {
-        console.log(result);
+        console.log(JSON.stringify(result));
       });
   }
 }
